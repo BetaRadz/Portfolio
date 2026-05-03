@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BetaRadz — Portfolio</title>
+  <meta name="description" content="Portfolio of BetaRadz — projects, skills and contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">BetaRadz</a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi — I'm BetaRadz</h1>
+          <p class="lead">I build delightful web experiences and ship reliable full‑stack apps. I love JavaScript, clean UI, and automation.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <div class="socials">
+            <!-- Replace with your links -->
+            <a href="https://github.com/BetaRadz" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:you@example.com">Email</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Profile placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="muted">A few projects I've worked on — click any to read details.</p>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card" data-title="Project One" data-tech="React · Node · PostgreSQL" data-desc="A short description of Project One. Features, stack and your role." tabindex="0">
+            <img src="https://picsum.photos/seed/p1/800/600" alt="Project One">
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p class="card-meta">React · Node</p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-title="Project Two" data-tech="Vue · Firebase" data-desc="Project Two description and impact; what you shipped." tabindex="0">
+            <img src="https://picsum.photos/seed/p2/800/600" alt="Project Two">
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p class="card-meta">Vue · Firebase</p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-title="Project Three" data-tech="Next.js · Prisma" data-desc="Highlights of Project Three: performance, deployment and outcome." tabindex="0">
+            <img src="https://picsum.photos/seed/p3/800/600" alt="Project Three">
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p class="card-meta">Next.js · Prisma</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About</h2>
+        <p>I'm a developer focused on shipping maintainable web apps. I enjoy problem solving, improving developer experience, and collaborating on open-source.</p>
+        <ul class="quick-info">
+          <li><strong>Location:</strong> Your City, Country</li>
+          <li><strong>Looking for:</strong> Full‑time / freelance / collaborations</li>
+          <li><strong>Available:</strong> Yes — available for new projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <div class="bar"><span style="width:90%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>React / Next.js</h4>
+            <div class="bar"><span style="width:85%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>Node.js / Databases</h4>
+            <div class="bar"><span style="width:80%"></span></div>
+          </div>
+          <div class="skill">
+            <h4>DevOps / CI</h4>
+            <div class="bar"><span style="width:70%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Prefer email or schedule a call — I reply fast.</p>
+        <div class="contact-grid">
+          <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+            <label>Name<input name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <div><button class="btn primary" type="submit">Send</button></div>
+          </form>
+          <div class="contact-info">
+            <p><strong>Email</strong><br>you@example.com</p>
+            <p><strong>GitHub</strong><br><a href="https://github.com/BetaRadz" target="_blank" rel="noopener">github.com/BetaRadz</a></p>
+            <p><strong>LinkedIn</strong><br><a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> BetaRadz — Built with care.</p>
+    </div>
+  </footer>
+
+  <!-- Project modal -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalTech" class="muted"></p>
+      <p id="modalDesc"></p>
+      <p><a id="modalLink" href="#" target="_blank" rel="noopener">View live / repo</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
